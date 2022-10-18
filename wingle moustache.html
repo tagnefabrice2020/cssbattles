@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingle Moustache</title>
+    <style>
+        :root {
+              --container-height: 100px;
+              --container-width: 260px;
+            }
+            body{
+              padding: 0;
+              margin: 0;
+              min-height: 100vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #F5D6B4;
+            }
+            
+            .container {
+              width:var(--container-width);
+              min-width: var(--container-width);
+              height: 100px;
+              position: relative;
+            }
+            
+            .container div {
+              height: calc(100% - 70px);
+            }
+            
+            .semi-circle:nth-child(1) {
+              width: 60px;
+              border-top-left-radius: 150px;
+              border-top-right-radius: 150px;
+              transform: rotate(-180deg);
+               position: absolute;
+             
+              left:0px; bottom: 0;
+              border-top: 20px solid #D86F45;
+              border-left: 20px solid #D86F45;
+              border-right: 20px solid #D86F45;
+            }
+            .semi-circle:nth-child(1)::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                bottom: 0px; background: #D86F45;
+                right: -20px;
+                top: 20px;
+                border-radius: 50px;
+            }
+            
+             .semi-circle:nth-child(2) {
+                width: 60px;
+                border-top-left-radius: 150px;
+                border-top-right-radius: 150px;
+                position: absolute;
+                right: 80px;
+                border-top: 20px solid #D86F45;
+                border-left: 20px solid #D86F45;
+                border-right: 20px solid #D86F45;
+            }
+            .semi-circle:nth-child(3) {
+              width: 60px;
+              border-top-left-radius: 150px;
+              border-top-right-radius: 150px;
+              transform: rotate(-180deg);
+               position: absolute;
+              bottom: 0px;
+              right:0px; border-top: 20px solid #D86F45;
+              border-left: 20px solid #D86F45;
+              border-right: 20px solid #D86F45;
+            }
+            .semi-circle:nth-child(3)::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                bottom: 0px; background: #D86F45;
+                left: -20px;
+                top: 20px;
+                border-radius: 50px;
+            }
+          </style>
+</head>
+<body>
+    <div class="container">
+        <div class="semi-circle"></div>
+        <div class="semi-circle"></div>
+        <div class="semi-circle"></div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daimond cut</title>
+    <style>
+        body {
+          padding: 0px;
+          margin: 0px;
+          background: #F3AC3C;
+        }
+        .container {
+          width: 100%;
+          min-height: 100vh;
+        }
+        
+        .container div:first-child {
+          width: 96px;
+          height: 96px;
+          border: 29px solid #998235;
+            margin-left: 50%;
+          transform: translate(-50%, 50%) rotate(45deg);
+          z-index: -1;
+          position: relative;
+        }
+        
+        .container div:nth-child(2) { 
+            width: 96px;
+          height: 96px;
+          border: 29px solid #F3AC3C;
+          z-index: 1;
+          margin-left: 50%;
+          margin-top: -88px;
+          transform: translate(-50%, -50%) rotate(45deg);
+          
+        }
+        
+        .container div:nth-child(2)::after {
+            content: '';
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          background: #1A4341;
+          top: 100%;
+            left: 100%;
+          z-index: 2;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+      </div>
+</body>
+</html>

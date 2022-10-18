@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Key</title>
+    <style>
+       :root {
+            --square-size: 50px;
+            --border-size: 10px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          background: #191919;
+        }
+        .container {
+            width: calc((var(--square-size) * 3) + var(--border-size) * 4);
+            height: calc((var(--square-size) * 3) + var(--border-size) * 4);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .container div {
+            width: var(--square-size);
+            height: var(--square-size);
+        }
+        
+        .container div:nth-child(1) {
+          border-radius:50px 50px 0px;
+          border: 10px solid #5DBCF9;
+        }
+        
+        .container div:nth-child(2) {
+           border-top: 10px solid #191919;
+           border-bottom: 10px solid #5DBCF9;
+        }
+        .container div:nth-child(3) {
+          border-radius: 50px 50px 50px 0px;
+           border: 10px solid #5DBCF9;
+        }
+        
+        .container div:nth-child(4) {
+           border-right: 10px solid #5DBCF9;
+           border-left: 10px solid #191919;
+        }
+        
+        .container div:nth-child(6) {
+           border-left: 10px solid #5DBCF9;
+           border-right: 10px solid #191919;
+        }
+        
+        .container div:nth-child(7) {
+          border-radius: 50px 0px 50px 50px;
+           border: 10px solid #5DBCF9;
+        }
+
+        .container div:nth-child(8) {
+          border-top: 10px solid #5DBCF9;
+        }
+
+        .container div:nth-child(9) {
+          border-radius:0px 50px 50px;
+           border: 10px solid #5DBCF9;
+        }
+      </style>
+      
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+</body>
+</html>

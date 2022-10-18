@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forking Crazy</title>
+    <style>
+       :root {
+            --fork-body-width: 140px;
+            --fork-body-height: 200px;
+            --fork-hand-width: 20px;
+            --fork-hand-height: 50px;
+        }
+        body{
+          padding: 0;
+          margin: 0;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: end;
+          background-color: #6592CF;
+        }
+        
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .fork--body {
+            background: linear-gradient(
+359deg, rgba(6,15,85,1) 57%, rgba(63,94,158,1) 63%, rgba(101,146,207,1) 100%);
+          width:var(--fork-body-width);
+          height: var(--fork-body-height);
+          display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+          border-top-left-radius: 25px;
+          border-top-right-radius: 25px;
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+        }
+        
+        .fork--hand {
+          width: var(--fork-hand-width);
+          height: var(--fork-hand-height);
+          background: #060F55;
+          position: relative;
+        }
+  
+  .fork--hand::before {
+    content: '';
+    position: absolute;
+    width: var(--fork-hand-width);
+    height: var(--fork-hand-width);
+    background: #060F55;
+    top: -10px;
+  }
+
+        .fork--body div {
+            height: calc(var(--fork-body-height) - 90px);
+            width: calc(var(--fork-body-width)/7);
+           
+        }
+        
+        .odd {
+          background: #060F55;
+          border-top-left-radius: 50px;
+          border-top-right-radius: 50px;
+        }
+
+        .even {
+            background: #6592CF;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+       
+      </style>
+      
+</head>
+<body>
+    <div class="container">
+        <div class="fork--body">
+          <div class="odd"></div>
+          <div class="even"></div>
+          <div class="odd"></div>
+          <div class="even"></div>
+          <div class="odd"></div>
+          <div class="even"></div>
+          <div class="odd"></div>
+        </div>
+        <div class="fork--hand"></div>
+      <div>
+</body>
+</html>

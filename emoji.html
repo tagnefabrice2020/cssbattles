@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Emoji</title>
+  </head>
+  <style>
+    ::after, ::before, * {
+      /*box-sizing: border-box;*/
+    }
+    body {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .head {
+      height: 60px;
+      width: 60px;
+      background: linear-gradient(33deg, rgba(203,54,17,1) 0%, rgba(224,93,61,1) 51%, rgba(241,141,78,1) 100%);
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      transition: border 600ms ease-in-out;
+    }
+
+    .head:hover {
+      border: 5px solid rgba(255, 255, 255,.93);
+    }
+
+    .eye-block {
+      width: 50%;
+      height: 20px;
+      margin: 20px auto;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .eye {
+      background: #000;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: relative;
+      animation: blink-eye infinite;
+      animation-duration: 5s;
+      animation-delay: 0s;
+    }
+
+    @keyframes blink-eye {
+      0% {
+      }
+      5%, 25% {
+        height: 10px;
+      }
+      30%, 35% {
+        height: 1px;
+      }
+      36% {
+        height: 10px;
+      }
+    }
+
+
+
+    .eye-block div:nth-child(1)::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      width: 10px;
+      height: 2px;
+      background: #000;
+      transform: rotate(25deg);
+      left: 2px;
+    }
+
+    .eye-block div:nth-child(2)::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      width: 10px;
+      height: 2px;
+      background: #000;
+      transform: rotate(-25deg);
+      right: 2px;
+    }
+
+    .mouth {
+      position: absolute;
+      width: 9px;
+      height: 5px;
+      left: 50%;
+      transform: translate(-50%);
+      top: 70%;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-top: 2px solid #000;
+      border-left: 2px solid;
+      border-right: 2px solid;
+    }
+
+  </style>
+  <body>
+    <div class="head">
+
+      <div class="eye-block">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+
+      <div class="mouth">
+
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yingyang</title>
+    <style>body {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .yinyang {
+        position: relative;
+        background: #fff;
+        height: 100px;
+        border-color: #000;
+        border-style: solid;
+        width: 50px; 
+        border-width: 2px 50px 2px 2px;
+        border-radius: 50%;
+        animation: roll 40000s infinite;
+      } 
+      
+      .yinyang:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background: #fff;
+        border: 18px solid #000;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        }
+      
+      
+      .yinyang:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #000;
+        border: 18px solid #fff;
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+      }
+      
+      
+      @keyframes roll {
+        from {
+          transform:rotate(0deg);
+        }
+        to {
+          transform:rotate(3600000deg);
+        }
+      }</style>
+</head>
+<body>
+    <div class="yinyang"></div>
+</body>
+</html>

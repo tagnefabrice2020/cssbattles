@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .apple {
+        position: relative;
+        display: flex;
+        width: 85px;
+        height:120px;
+        background: #D4392D;
+        border-radius: 50%;
+        transform: rotate(-30deg);
+        margin-left:-40px;
+      }
+
+      .apple::after {
+        content: '';
+        left:80px;
+        bottom: 0;
+        width: 85px;
+        height: 120px;
+        position: absolute;
+        background: #123;
+        border-radius: 50%;
+        transform: rotate(60deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class='apple'></div>
+  </body>
+</html>

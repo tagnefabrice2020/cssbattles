@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernova</title>
+    <style>
+        *{
+          color: #fff;
+        }
+        body {
+          padding: 0px;
+          margin: 0px;
+          background: #243D83;
+        }
+      
+        .container  {
+          width: 120px;
+          height: 120px;
+          margin-left: 50%;
+          transform: translate(-50%, 70%) rotate(45deg);
+          z-index: 1000;
+          position: relative;
+        }
+        
+        .container:after {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          background: #243D83;
+        }
+        
+        .container:before {
+          content: '';
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: #EEB850; z-index: 10000;
+        }
+        
+        .container div:nth-child(1) {
+          position: absolute;
+          width: 100px;
+          height: 100px;  background:#6592CF;
+          border-radius: 50px;
+          left: 50%;
+          transform: translate(-50%, -50%); z-index: -1;
+        }
+        
+        .container div:nth-child(2) {
+           position: absolute;
+          width: 100px;
+          height: 100px;
+          background:#6592CF;
+          border-radius: 50px;
+          top: 50%;
+          transform: translate(-50%, -50%); z-index: -1;
+        }
+        
+        .container div:nth-child(3) {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background:#6592CF;
+          border-radius: 50px;
+          left: 100%;
+          top: 50%;
+          transform: translate(-50%, -50%); z-index: -1;
+        }
+        
+        .container div:nth-child(4) {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          background:#6592CF;
+          border-radius: 50px;
+          left: 50%;
+          top: 100%;
+          transform: translate(-50%, -50%); z-index: -1;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+       </div>
+</body>
+</html>

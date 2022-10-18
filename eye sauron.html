@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye sauron</title>
+    <style>
+        body{
+          padding: 0;
+          margin: 0;
+          min-height: 100vh;
+          background-color: #191210;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .container {
+          width:300px;
+          height: 150px;
+          position: relative;
+          display: flex;
+          align-items: center;
+        }
+        
+        .circle {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: #191210;
+          position: relative;
+          border: 20px solid #ECA03D;
+          position: absolute;
+          left: 50%;
+          right: 50;
+          transform: translate(-50%)
+        }
+        
+        .circle::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 50px;
+          width: 50px;
+          background: #84271C;
+          border-radius: 50px;
+        }
+        
+        
+        .semi-circle.down{
+          width: 60px;
+          height: 30px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+          border-left: 20px solid #ECA03D;
+           border-right: 20px solid #ECA03D;
+           border-bottom: 20px solid #ECA03D; position: absolute;
+          top: 75px;
+          
+        }
+        
+         .semi-circle.up{
+          width: 60px;
+          height: 30px;
+          border-left: 20px solid #ECA03D;
+          border-right: 20px solid #ECA03D;
+          border-top: 20px solid #ECA03D;
+          border-top-left-radius: 50px;
+          border-top-right-radius: 50px;
+          position: absolute;
+          top: 25px;
+          left: 200px
+        }
+       
+      </style>
+      
+</head>
+<body>
+    <div class="container">
+        <div class="semi-circle down"></div>
+        <div class="circle"></div>
+        <div class="semi-circle up"></div>
+      </div>
+</body>
+</html>

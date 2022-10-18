@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo</title>
+    <style>
+        body {
+          padding: 0px;
+          margin: 0px;
+        }
+        .container {
+          display: flex;
+          align-items:center;
+          justify-content: center;
+          width: 100%;
+          min-height: 100vh;
+          background: #191919;
+        }
+        .container div {
+          width: 45px;
+          height: 45px;
+          background: #191919;
+          flex-direction: row;
+          border-radius: 50%;
+          margin: 1px;
+        }
+        
+        .container div:nth-child(1){
+            border: 20px solid #714B67;  
+        }
+        
+        .container div:nth-child(2) {
+          position: relative;
+        }
+        
+        .container div:nth-child(2)::before {
+          content: '';
+          position: absolute;
+          width:20px;
+          height:70px;
+          top: -40px;
+          right:-20px;
+          border-radius: 50px;
+          background: #8F8F8F;
+        }
+        
+        .container div:not(first-of-type) {
+          border: 20px solid #8F8F8F;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+</body>
+</html>

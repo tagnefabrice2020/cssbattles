@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig emoji</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background-color: #000;
+        }
+
+        .head {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #ffc0cb;
+            margin-top: 20px;
+            border-radius: 50%;
+            border: 5px solid #000;
+        }
+        
+        .ear {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ffc0cb;
+            border-radius: 50%;
+            top: -10px;
+            border: 5px solid #000;
+            z-index: -1;
+        }
+
+        .ear:first-child {
+            left: 10px;
+        }
+
+        .ear:last-child {
+            right: 10px;
+        }
+
+        .eye {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            top: 40px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .eye:first-child {
+            left: 30px;
+        }
+
+        .eye:last-child {
+            right: 30px;
+        }
+
+        .pupil {
+            background-color: #000;
+            width: 25px;
+            height: 25px;
+            margin-left: 50%;
+            transform: translate(-50%, 50%);
+            border-radius: 50%;
+        }
+
+        .nose {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            bottom: 30px;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: #f57187;
+            border-radius: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #000;
+        }
+
+        .nostril  {
+            width: 25px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div>
+          <div class="ear"></div>
+          <div class="ear"></div>
+        </div>
+      
+        <div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+          <div class="eye">
+            <div class="pupil"></div>
+          </div>
+        </div>
+      
+        <div class="nose">
+          <div class="nostril"></div>
+          <div class="nostril"></div>
+        </div>
+      </div>
+</body>
+</html>

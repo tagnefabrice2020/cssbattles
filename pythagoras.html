@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagoras</title>
+    <style>
+        body {
+          background: #D25B70;
+          padding:0px; margin:0px;
+        }
+       
+        .container {
+          width: 100px;
+          height:200px;
+          margin-left: 50%;
+          transform: translate(-50%, 25%);
+          
+        }
+        .first {
+            background-color: transparent;
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+        
+        .first div:first-child {
+            width: 51px;
+            height: calc(150px / 3);
+            background-color: #6CB3A9;
+            margin-bottom: 0px;
+            position: absolute;
+            transform: rotate(-45deg);
+            left: -25px;
+            top: calc(100% - 61px);
+        }
+
+        .first div:nth-child(2) {
+            width: 74px;
+            height: calc(150px / 2);
+            background-color: #F6DF96;
+            margin-bottom: 0px;
+            margin-left: auto;
+            position: absolute;
+            right: 25.8px;
+            bottom: 13px;
+            transform: rotate(30deg);
+        }
+
+
+        .second {
+          background: #F7F3DA;
+          width: inherit;
+          height: 50%;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="second">
+        </div>
+      </div>
+</body>
+</html>
